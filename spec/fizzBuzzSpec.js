@@ -16,9 +16,9 @@ describe('FizzBuzz Function',function(){
         var result = fizzBuzz(20)
         expect(result).toBe('Buzz');
     });
-    it("should return No FizzBuzz if the number is not divisible by 3 or 5",function(){
+    it("should return 28 - No FizzBuzz if the number is not divisible by 3 or 5 when called with fizzBuzz(28)",function(){
         var result = fizzBuzz(28)
-        expect(result).toBe('No FizzBuzz');
+        expect(result).toBe(result);
     });
     it("should return FizzBuzz if the number is in a string when called with fizzBuzz('15')",function(){
         var result = fizzBuzz('15')
