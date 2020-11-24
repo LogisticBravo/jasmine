@@ -22,7 +22,10 @@ function whatCanIDrink(age){
     else{return "Sorry, I can’t tell what drink because that age is incorrect!"}}
 */
 
-function fizzBuzz(numOne,numTwo){
-    if(numOne + numTwo === (numOne+numTwo)/3){return "FizzBuzz";}
-};
+function fizzBuzz(numOne){
+    if((numOne%3==0)&&(numOne%5==0)){return "FizzBuzz";}
+    else if((numOne%3==0)){return "Fizz";}
+    else if((numOne%5==0)){return "Buzz";}
+    else if((numOne%3>=0)||(numOne%5>=0)){return "No FizzBuzz";}
+    else {alert("Error - NaN");}};
 
